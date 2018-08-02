@@ -1,0 +1,15 @@
+/* screens smaller than 768 */
+@media (max-width: 767px) {
+	.note {
+		min-width: auto;
+		max-width: 240px;
+		background-size: contain;
+	}
+	p {
+		padding: 0 15px 0 0;
+		font: 26px/32px 'Heebo-Medium', Arial;
+	}
+	h2 {
+		height: 160px;
+	}
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="IL">
+	<meta charset="UTF-8">
+	<title>my project</title>
+	<link rel="shortcut icon" href="img/note.png" type="image/png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="container">
+		<div>
+		<h1>my task</h1>
+		</div>
+		<div class="padd cf">
+			<form id="hook_my_form" class="notes_form">
+				<div class="form_wrapper">
+					<label>
+						<textarea id="hook_note_body" name="body" placeholder="תכניס כאן תוכן נוט חדש" required></textarea>
+					</label> <label>
+					<input id="hook_date" type="date" name="date">
+				</label> <label class="is_important_wrap">
+					<input id="hook_is_important" type="checkbox" name="is_important"> סמן כחשוב
+				</label>
+
+					<input class="save_input" type="submit" value="שמור">
+
+					<div id="print_error" class="error"></div>
+				</div>
+			</form>
+		</div>
+
+		<ul id="hook_notes_wrapper" class="notes_wrapper cf"></ul>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/helpers.js"></script>
+<script type="text/javascript" src="js/data_store.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
